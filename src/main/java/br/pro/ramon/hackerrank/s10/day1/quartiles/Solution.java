@@ -15,12 +15,12 @@ public class Solution {
             v[i] = scan.nextInt();
         }
 
-        System.out.printf("%d%n", getQuartil(v, 1));
-        System.out.printf("%d%n", getQuartil(v, 2));
-        System.out.printf("%d%n", getQuartil(v, 3));
+        System.out.printf("%d%n", getQuartile(v, 1));
+        System.out.printf("%d%n", getQuartile(v, 2));
+        System.out.printf("%d%n", getQuartile(v, 3));
     }
 
-    public static int getQuartil(int[] v, int q) {
+    public static int getQuartile(int[] v, int q) {
         int l = 0, r = v.length - 1;
 
         if (q == 1) {
