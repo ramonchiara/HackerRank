@@ -1,4 +1,4 @@
-package br.pro.ramon.hackerrank.s10.day0.a;
+package br.pro.ramon.hackerrank.s10.day0.mmm;
 
 import java.util.*;
 import java.util.function.Function;

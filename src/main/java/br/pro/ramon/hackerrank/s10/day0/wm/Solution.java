@@ -1,4 +1,4 @@
-package br.pro.ramon.hackerrank.s10.day0.b;
+package br.pro.ramon.hackerrank.s10.day0.wm;
 
 import java.util.Arrays;
 import java.util.Scanner;
