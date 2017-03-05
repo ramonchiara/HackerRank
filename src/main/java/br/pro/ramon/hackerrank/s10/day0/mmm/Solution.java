@@ -26,12 +26,7 @@ public class Solution {
     }
 
     public static double getMedian(int[] v) {
-        return Arrays.stream(v)
-                .sorted()
-                .skip(v.length / 2 - 1)
-                .limit(v.length % 2 == 0 ? 2 : 1)
-                .average()
-                .getAsDouble();
+        return getMedian(v, 0, v.length - 1);
     }
 
     public static int getMode(int[] v) {
@@ -44,6 +39,22 @@ public class Solution {
                 .findFirst()
                 .get()
                 .getKey();
+    }
+
+    public static double getMedian(int[] v, int l, int r) {
+        int length = r - l + 1;
+
+        int skip = l + length / 2 - (1 - length % 2);
+        int limit = length % 2 == 0 ? 2 : 1;
+
+        double median = Arrays.stream(v)
+                .sorted()
+                .skip(skip)
+                .limit(limit)
+                .average()
+                .getAsDouble();
+
+        return median;
     }
 
 }
